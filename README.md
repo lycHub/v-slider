@@ -1,7 +1,7 @@
 # vue-slider
 ### A powerful slider plug-in based on Vue.
 
-English | 简体中文
+English & [简体中文](中文)
 
 ## Docs & Demo
 [demo](https://nightcatsama.github.io/vue-slider-component)
