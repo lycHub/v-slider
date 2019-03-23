@@ -15,7 +15,7 @@ npm i iv-slider -S
 Using in webpack, part of the code is omitted:
 ``` js
 import Vue from 'vue';
-import ivSlider from './lib'
+import ivSlider from 'iv-slider';
 Vue.use(ivSlider);
 ```
 

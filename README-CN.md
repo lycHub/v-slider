@@ -14,7 +14,7 @@ npm i iv-slider -S
 在 webpack 中使用，部分代码省略：
 ``` js
 import Vue from 'vue';
-import ivSlider from './lib'
+import ivSlider from 'iv-slider';
 Vue.use(ivSlider);
 ```
 
