@@ -5,24 +5,24 @@
         <br />
 
         <div style="width: 500px;margin: 100px auto;">
-            <VSlider :formatTip="formatTip" showTip="never" :customScales="customScales" disabled scalePoi="top" v-model="value" :min="0" :max="60" :step="10" range showScales showDots></VSlider>
+            <iv-slider :formatTip="formatTip" showTip="never" :customScales="customScales" disabled scalePoi="top" v-model="value" :min="0" :max="60" :step="10" range showScales showDots></iv-slider>
         </div>
         <div style="width: 500px;margin: 100px auto;">
-            <VSlider :formatScales="formatScales" toolTipPoi="bottom" scalePoi="top" v-model="value" :min="0" :max="60" :step="10" range showScales showDots></VSlider>
+            <iv-slider :formatScales="formatScales" toolTipPoi="bottom" scalePoi="top" v-model="value" :min="0" :max="60" :step="10" range showScales showDots></iv-slider>
         </div>
 
         <div style="width: 500px;margin: 100px auto;">
-            <VSlider :formatScales="formatScales" toolTipPoi="bottom" v-model="value4" :min="0" :max="1" :step="0.2" range showScales showDots></VSlider>
+            <iv-slider :formatScales="formatScales" toolTipPoi="bottom" v-model="value4" :min="0" :max="1" :step="0.2" range showScales showDots></iv-slider>
         </div>
 
         <div style="width: 5px;height:500px;margin: 100px auto;">
-            <VSlider :formatTip="formatTip" :customScales="customScales" toolTipPoi="left" v-model="value" :min="0" :max="60" :step="10" range showScales showDots vertical></VSlider>
+            <iv-slider :formatTip="formatTip" :customScales="customScales" toolTipPoi="left" v-model="value" :min="0" :max="60" :step="10" range showScales showDots vertical></iv-slider>
         </div>
         <div style="width: 5px;height:500px;margin: 100px auto;">
-            <VSlider :formatScales="formatScales" toolTipPoi="left" v-model="value" :min="0" :max="60" :step="10" range showScales showDots vertical></VSlider>
+            <iv-slider :formatScales="formatScales" toolTipPoi="left" v-model="value" :min="0" :max="60" :step="10" range showScales showDots vertical></iv-slider>
         </div>
         <div style="width: 5px;height:500px;margin: 100px auto;">
-            <VSlider :formatScales="formatScales" v-model="value4" :min="0" :max="1" :step="0.2" range showScales showDots vertical></VSlider>
+            <iv-slider :formatScales="formatScales" v-model="value4" :min="0" :max="1" :step="0.2" range showScales showDots vertical></iv-slider>
         </div>
     </div>
 </template>

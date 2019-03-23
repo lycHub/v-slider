@@ -79,7 +79,7 @@
   import { getStyle, oneOf, on, off } from "./util";
   import VTooltip from "./v-tooltip.vue";
   export default {
-    name: "VSlider",
+    name: "ivSlider",
     components: { VTooltip },
     props: {
       vertical: {

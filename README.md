@@ -15,21 +15,20 @@ npm i iv-slider -S
 Using in webpack, part of the code is omitted:
 ``` js
 import Vue from 'vue';
-import IVslider from 'iv-slider';
-
-Vue.use(IVslider);
+import ivSlider from './lib'
+Vue.use(ivSlider);
 ```
 
 Using in .vue file：
 ``` html
 <template>
-    <i-editor v-model="content"></i-editor>
+    <iv-slider v-model="value"></iv-slider>
 </template>
 <script>
     export default {
         data () {
             return {
-                content: ''
+                value: 10
             }
         }
     }

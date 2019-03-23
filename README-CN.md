@@ -14,21 +14,20 @@ npm i iv-slider -S
 在 webpack 中使用，部分代码省略：
 ``` js
 import Vue from 'vue';
-import IVslider from 'iv-slider';
-
-Vue.use(IVslider);
+import ivSlider from './lib'
+Vue.use(ivSlider);
 ```
 
 在 vue 中使用：
 ``` html
 <template>
-    <i-editor v-model="content"></i-editor>
+    <iv-slider v-model="value"></iv-slider>
 </template>
 <script>
     export default {
         data () {
             return {
-                content: ''
+                value: 10
             }
         }
     }

@@ -8,10 +8,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const config = {
   mode: 'production',
   target: 'web',
-  entry: path.join(__dirname, '..', 'src/lib/index.js'),
+  entry: path.join(__dirname, '..', 'src/iv-slider/index.js'),
   output: {
-    filename: 'v-slider.js',
-    path: path.join(__dirname, '..',  'v-slider'),
+    filename: 'iv-slider.js',
+    path: path.join(__dirname, '..',  'lib'),
     library: "VSlider",
     libraryTarget: "umd"
   },
