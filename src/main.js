@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
-import ivSlider from './iv-slider'
+import ivSlider from './index'
 Vue.use(ivSlider);
 
 new Vue({

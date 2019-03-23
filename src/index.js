@@ -1,4 +1,4 @@
-import VSlider from './v-slider.vue';
+import VSlider from './iv-slider/v-slider.vue';
 
 
 const plugin = {};
