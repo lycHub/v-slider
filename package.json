@@ -2,7 +2,7 @@
   "name": "ivue-slider",
   "version": "0.0.1",
   "description": "vue slider block plugin",
-  "main": "lib/iv-slider.js",
+  "main": "index",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.js",
@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
+    "iv-slider": "0.0.4",
     "vue": "^2.6.10"
   }
 }
