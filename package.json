@@ -1,5 +1,5 @@
 {
-  "name": "vue-slider",
+  "name": "iv-slider",
   "version": "0.0.1",
   "description": "vue slider block plugin",
   "main": "lib/iv-slider.js",
