@@ -1,7 +1,7 @@
 # vue-slider
 ### 一款基于Vue的滑块插件。
 
-[English](English) & 中文
+[English](README.md) & 中文
 
 ## Docs & Demo
 [demo](https://nightcatsama.github.io/vue-slider-component)
