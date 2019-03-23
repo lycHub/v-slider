@@ -14,8 +14,7 @@ module.exports = {
   module: {
     rules: [{
       test: /\.vue$/,
-      loader: 'vue-loader',
-      exclude: /node_modules/
+      loader: 'vue-loader'
     }, {
       test: /\.js$/,
       loader: 'babel-loader',
