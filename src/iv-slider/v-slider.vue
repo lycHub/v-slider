@@ -163,6 +163,12 @@
       step: {
         type: Number,
         default: 1
+      },
+
+      // 是否按照step滑动
+      accordingToStep: {
+        type: Boolean,
+        default: true
       }
     },
     data() {
@@ -573,7 +579,7 @@
         const modulus = this.handleDecimal(newVal, this.step);
         // console.log('modulus :', modulus); newPos % this.step
         const value = this.currentValue;
-        value[index] = newVal - modulus;
+        value[index] = this.accordingToStep ? newVal - modulus : newVal;
 //        console.log("value :", value);
         this.currentValue = value.slice();
 
@@ -632,10 +638,10 @@
       this.current = 0;
       this.startVal = 0;
 
-      setTimeout(() => {
-        // console.log('dots :', this.dots);
-//      console.log("scales :", this.scales);
-      }, 2000);
+      /*setTimeout(() => {
+         console.log('dots :', this.dots);
+        console.log("scales :", this.scales);
+      }, 2000);*/
     }
   };
 </script>
