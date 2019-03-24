@@ -1,6 +1,6 @@
 {
   "name": "iv-slider",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "description": "vue slider block plugin",
   "main": "src/iv-slider/index.js",
   "scripts": {

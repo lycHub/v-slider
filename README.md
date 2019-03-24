@@ -3,8 +3,7 @@
 
 English & [简体中文](README-CN.md)
 
-## Docs & Demo
-[demo](https://nightcatsama.github.io/vue-slider-component)
+## [Docs & Demo](https://lychub.github.io/v-slider/dist/)
 
 
 ## How to use
