@@ -1,4 +1,4 @@
-# -slider
+# iv-slider
 ### A powerful slider plug-in based on Vue，Expansion of [iview slider](https://www.iviewui.com/components/slider).
 
 English & [简体中文](README-CN.md)
