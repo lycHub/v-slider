@@ -1,7 +1,7 @@
 <template>
     <div :class="[prefixCls + '-wrap', { disabled }]" ref="slider" :style="wrapStyle" @click.self="sliderClick">
         <!-- 色条 -->
-        <div :class="[prefixCls + '-bar']" :style="barStyle" @click.self="sclick"></div>
+        <div :class="[prefixCls + '-bar']" :style="barStyle" @click.self="sliderClick"></div>
 
         <!-- 断点 -->
         <template v-if="showDots">
