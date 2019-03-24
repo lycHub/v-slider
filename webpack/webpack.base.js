@@ -14,12 +14,10 @@ module.exports = {
   module: {
     rules: [{
       test: /\.vue$/,
-      loader: 'vue-loader',
-      exclude: /node_modules/
+      loader: 'vue-loader'
     }, {
       test: /\.js$/,
       loader: 'babel-loader',
-      exclude: /node_modules/,
       include: path.join(__dirname, '..',  'src')
     }, {
       test: /\.css$/,

@@ -12,6 +12,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
     "element-ui": "^2.4.5",
+    "iv-slider": "^0.0.6",
     "popper.js": "^1.14.7",
     "vue": "^2.6.10"
   },

@@ -152,7 +152,7 @@
                                 显示断点
                             </el-col>
                             <el-col :span="18">
-                                <iv-slider v-model="value4" showDots :step="10"></iv-slider>
+                                <iv-slider v-model="value4" :accordingToStep="false" showDots :step="10"></iv-slider>
                             </el-col>
                         </el-row>
 
@@ -201,7 +201,7 @@
                                             显示断点
                                         </el-col>
                                         <el-col :span="18">
-                                            <iv-slider v-model="value4" showDots :step="10"></iv-slider>
+                                            <iv-slider v-model="value4" :accordingToStep="false" showDots :step="10"></iv-slider>
                                         </el-col>
                                     </el-row>
 
@@ -351,6 +351,34 @@
                         </ShowCode>
                     </el-col>
                 </el-col>
+
+                <el-col :span="24" class="section">
+                    <h3>Props</h3>
+                    <el-table :data="propsData" style="width: 100%">
+                        <el-table-column
+                                v-for="item in propsColumn"
+                                :key="item.key"
+                                :prop="item.prop"
+                                :label="item.label"
+                                :align="item.align"
+                                :width="item.width">
+                        </el-table-column>
+                    </el-table>
+                </el-col>
+
+                <el-col :span="24" class="section">
+                    <h3>Events</h3>
+                    <el-table :data="eventsData" style="width: 100%">
+                        <el-table-column
+                                v-for="item in eventsColumn"
+                                :key="item.key"
+                                :prop="item.prop"
+                                :label="item.label"
+                                :align="item.align"
+                                :width="item.width">
+                        </el-table-column>
+                    </el-table>
+                </el-col>
             </el-row>
         </el-main>
     </el-container>
@@ -375,7 +403,159 @@
             26: '26°C',
             37: '37°C',
             41: '41°C'
-          }
+          },
+          propsColumn: [{
+            prop: 'key',
+            label: '参数',
+            align: 'center',
+            width: 180
+          }, {
+            prop: 'desc',
+            label: '说明',
+            align: 'center',
+            width: 330
+          }, {
+            prop: 'type',
+            label: '类型',
+            align: 'center',
+            width: 100
+          }, {
+            prop: 'value',
+            label: '可选值',
+            align: 'center',
+            width: 450
+          }, {
+            prop: 'default',
+            label: '默认值',
+            align: 'center',
+            width: 100
+          }],
+
+          propsData: [{
+            key: 'value / v-model',
+            desc: '绑定值',
+            type: 'number',
+            value: '-',
+            default: 0
+          }, {
+            key: 'vertical',
+            desc: '是否垂直模式, 默认高度100%，最小高度300px',
+            type: 'boolean',
+            value: 'true/false',
+            default: 'false'
+          }, {
+            key: 'min',
+            desc: '最小值',
+            type: 'number',
+            value: '-',
+            default: 0
+          }, {
+            key: 'max',
+            desc: '最大值',
+            type: 'number',
+            value: '-',
+            default: 100
+          }, {
+            key: 'disabled',
+            desc: '是否禁用',
+            type: 'boolean',
+            value: 'true/false',
+            default: 'false'
+          }, {
+            key: 'step',
+            desc: '步长',
+            type: 'number',
+            value: '-',
+            default: 1
+          }, {
+            key: 'accordingToStep',
+            desc: '是否按照步长滑动',
+            type: 'boolean',
+            value: 'true/false',
+            default: 'false'
+          }, {
+            key: 'showDots',
+            desc: '是否显示断点',
+            type: 'boolean',
+            value: 'true/false',
+            default: 'false'
+          }, {
+            key: 'showTip',
+            desc: '是否显示tooltip',
+            type: 'string',
+            value: 'always（一直显示）/never（不显示）/hover（鼠标经过显示）',
+            default: 'hover'
+          }, {
+            key: 'formatTip',
+            desc: '格式化tooltip',
+            type: 'function(value)',
+            value: '-',
+            default: '-'
+          }, {
+            key: 'toolTipPoi',
+            desc: 'tooltip位置',
+            type: 'string',
+            value: 'top/bottom(水平有效) | left/right(垂直有效)',
+            default: 'bottom(水平) | right(垂直)'
+          }, {
+            key: 'range',
+            desc: '是否为范围选择',
+            type: 'boolean',
+            value: 'true/false',
+            default: 'false'
+          }, {
+            key: 'showScales',
+            desc: '是否显示刻度',
+            type: 'boolean',
+            value: 'true/false',
+            default: 'false'
+          }, {
+            key: 'scalePoi',
+            desc: '刻度位置',
+            type: 'string',
+            value: 'top/bottom(水平有效) | left/right(垂直有效)',
+            default: 'bottom(水平) | right(垂直)'
+          }, {
+            key: 'formatScales',
+            desc: '格式化刻度',
+            type: 'function(value)',
+            value: '-',
+            default: '-'
+          }, {
+            key: 'customScales',
+            desc: '自定义刻度, 值为一个对象，对象的key必须为数字且不能超出min和max',
+            type: 'object',
+            value: '-',
+            default: '-'
+          }],
+
+          eventsColumn: [{
+            prop: 'evtName',
+            label: '事件名',
+            align: 'center',
+            width: 100
+          }, {
+            prop: 'desc',
+            label: '说明',
+            align: 'center',
+            width: 960
+          }, {
+            prop: 'callbackArg',
+            label: '回调参数',
+            align: 'center',
+            width: 100
+          }],
+
+          eventsData: [{
+            evtName: 'on-change',
+            desc: '在松开滑动时触发，返回当前的选值，在滑动过程中不会触发',
+            callbackArg: 'value'
+          }, {
+            evtName: 'on-input',
+            desc: '滑动条数据变化时触发，返回当前的选值，在滑动过程中实时触发',
+            callbackArg: 'value'
+          }]
+
         }
       },
       methods: {
