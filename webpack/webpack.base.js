@@ -21,6 +21,12 @@ module.exports = {
       loader: 'babel-loader',
       exclude: /node_modules/,
       include: path.join(__dirname, '..',  'src')
+    }, {
+      test: /\.css$/,
+      use: ['vue-style-loader', 'css-loader']
+    }, {
+      test: /\.(gif|jpg|jpeg|png|svg|ttf|woff)$/,
+      loader: 'url-loader'
     }]
   },
   plugins: [

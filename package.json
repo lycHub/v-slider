@@ -1,35 +1,35 @@
 {
   "name": "iv-slider",
   "version": "0.0.5",
-  "description": "vue slider block plugin",
-  "main": "src/iv-slider/index.js",
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.js",
-    "build:VSlider": "webpack --config webpack/compile.VSlider.js"
-  },
-  "keywords": [
-    "vue",
-    "slider"
-  ],
-  "author": "Madao",
-  "license": "ISC",
   "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lycHub/v-slider"
+  "description": "vue slider block plugin",
+  "author": "Madao",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.js",
+    "build:VSlider": "webpack --config webpack/compile.VSlider.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/webpack.dev.js"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.0",
+    "element-ui": "^2.4.5",
+    "popper.js": "^1.14.7",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "babel-loader": "^8.0.5",
+    "babel-plugin-component": "^1.1.1",
     "clean-webpack-plugin": "^2.0.1",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "0.5.0",
+    "url-loader": "^1.1.2",
+    "vue-cli-plugin-element": "^1.0.1",
     "vue-loader": "^15.7.0",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.10",
@@ -38,9 +38,14 @@
     "webpack-dev-server": "^3.2.1",
     "webpack-merge": "^4.2.1"
   },
-  "dependencies": {
-    "@babel/polyfill": "^7.4.0",
-    "popper.js": "^1.14.7",
-    "vue": "^2.6.10"
+  "keywords": [
+    "vue",
+    "slider"
+  ],
+  "license": "ISC",
+  "main": "src/iv-slider/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lycHub/v-slider"
   }
 }
