@@ -1,5 +1,5 @@
 # vue-slider
-### 一款基于Vue的滑块插件。
+### 一款基于Vue的滑块插件, 是基于[iview slider](https://www.iviewui.com/components/slider)的拓展。
 
 [English](README.md) & 中文
 
