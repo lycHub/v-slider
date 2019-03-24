@@ -21,13 +21,6 @@ const config = {
       index: '/src/index.html'
     }
   },
-
-  module: {
-    rules: [{
-      test: /\.less$/,
-      use: ['vue-style-loader', 'css-loader', 'less-loader']
-    }]
-  },
   
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

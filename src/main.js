@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import App from './App.vue';
 import ivSlider from 'iv-slider';
-import './plugins/element.js';
 Vue.use(ivSlider);
 
+import './plugins/element.js';
 import 'element-ui/lib/theme-chalk/index.css';
 
 

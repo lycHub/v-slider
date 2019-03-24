@@ -20,8 +20,8 @@ module.exports = {
       loader: 'babel-loader',
       include: path.join(__dirname, '..',  'src')
     }, {
-      test: /\.css$/,
-      use: ['vue-style-loader', 'css-loader']
+      test: /\.(css|less)$/,
+      use: ['vue-style-loader', 'css-loader', 'less-loader']
     }, {
       test: /\.(gif|jpg|jpeg|png|svg|ttf|woff)$/,
       loader: 'url-loader'
