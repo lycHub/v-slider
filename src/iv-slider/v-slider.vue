@@ -139,7 +139,7 @@
         }
       },
 
-      // scale位置
+      // tooltip位置
       toolTipPoi: {
         type: String,
         default: "top",
@@ -210,6 +210,7 @@
         } else {
           style.width = "4px";
           style.height = "100%";
+          style.minHeight = "300px";
           style.margin = "0 16px";
         }
         return style;
